@@ -36,14 +36,12 @@ class MainActivity : AppCompatActivity() {
 
         //setContentView(R.layout.activity_main)
 
-        animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),
-            R.anim.fade_in);
-
-        animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),
-            R.anim.fade_in);
         // fade in
+        animFadeIn = AnimationUtils.loadAnimation(
+            applicationContext,
+            R.anim.fade_in);
         binding.btnFadeIn.setOnClickListener {
-            binding.txtFadeIn.setVisibility(View.VISIBLE);
+            binding.txtFadeIn.visibility = View.VISIBLE;
             binding.txtFadeIn.startAnimation(animFadeIn);
         }
     }

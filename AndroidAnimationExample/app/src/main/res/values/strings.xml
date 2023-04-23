@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Android Animation Example</string>
+    <string name="blink">Blink</string>
+    <string name="blink_text">Blink Text</string>
+    <string name="cross_fade_in">Cross Fade In</string>
+    <string name="cross_fade_out">Cross Fade Out</string>
+    <string name="cross_fade">Cross Fade</string>
+    <string name="fade_in">Fade In</string>
+    <string name="fade_in_text">Fade In Text</string>
+    <string name="fade_out">Fade Out</string>
+    <string name="fade_out_text">Fade Out Text</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_in_text">Zoom In Text</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="zoom_out_text">Zoom Out Text</string>
+    <string name="rotate">Rotate</string>
+    <string name="rotate_text">Rotate Text</string>
+    <string name="move">Move</string>
+    <string name="move_text">Move Text</string>
+    <string name="slide_up">Slide Up</string>
+    <string name="slide_up_text">Slide Up Text</string>
+    <string name="slide_down">Slide Down</string>
+    <string name="slide_down_text">Slide Down Text</string>
+    <string name="bounce">Bounce</string>
+    <string name="bounce_text">Bounce Text</string>
+    <string name="sequential_animation">Sequential Anim</string>
+    <string name="sequential_animation_text">Sequential Text</string>
+    <string name="together_animation">Together Anim</string>
+    <string name="together_animation_text">Together Text</string>
 </resources>
