@@ -1,12 +1,31 @@
 package com.android.developer.androidanimationexample
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import androidx.appcompat.app.AppCompatActivity
 import com.android.developer.androidanimationexample.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    var animFadeIn: Animation? = null
+    var animFadeOut: Animation? = null
+    var animBlink: Animation? = null
+    var animZoomIn: Animation? = null
+    var animZoomOut: Animation? = null
+    var animRotate: Animation? = null
+    var animMove: Animation? = null
+    var animSlideUp: Animation? = null
+    var animSlideDown: Animation? = null
+    var animBounce: Animation? = null
+    var animSequential: Animation? = null
+    var animTogether: Animation? = null
+    var animCrossFadeIn: Animation? = null
+    var animCrossFadeOut: Animation? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,5 +35,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         //setContentView(R.layout.activity_main)
+
+        animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),
+            R.anim.fade_in);
+
+        animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),
+            R.anim.fade_in);
+        // fade in
+        binding.btnFadeIn.setOnClickListener {
+            binding.txtFadeIn.setVisibility(View.VISIBLE);
+            binding.txtFadeIn.startAnimation(animFadeIn);
+        }
     }
 }
